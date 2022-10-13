@@ -40,8 +40,11 @@ class LinkedList {
         // Otherwise, loop until the end and add at the end with a null
         while(n.next != null) {
             n = n.next;
-            n.next = new Node(value, null);
+            //buggy line (move from inside while loop to outside, or it create
+            //infinite loop of nodes)
+            // n.next = new Node(value, null);
         }
+        n.next = new Node(value, null);
     }
     /**
      * @return the value of the first element in the list
