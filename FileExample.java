@@ -38,6 +38,10 @@ public class FileExample {
 
   */
 
+  /* 
+  Bug: files – kind of two bugs: when there's a directory there should be a recursive call, 
+  like .addAll(getFiles(subFile)). Also the .add(file) should only happen for non-directories
+  */
 	static List<File> getFiles(File start) throws IOException {
 	  File f = start;
 	  List<File> result = new ArrayList<>();
