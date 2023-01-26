@@ -44,6 +44,7 @@ class LinkedList {
             //infinite loop of nodes)
             // n.next = new Node(value, null);
         }
+        // fixed
         n.next = new Node(value, null);
     }
     /**
