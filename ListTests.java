@@ -37,6 +37,18 @@ public class ListTests {
                         ListExamples.filter2(input, checker));
     }
 
+    @Test
+    public void testFilter3() {
+        ArrayList<String> input = new ArrayList<>();
+        input.add("hi");
+        input.add("hello");
+        input.add("bestie");
+        input.add("hey");
+        StringChecker checker = new ChooseShortWord();
+        assertEquals(new ArrayList<>(Arrays.asList("hi", "hey")),
+                        ListExamples.filter2(input, checker));
+    }
+
 	@Test 
 	public void testMerge() {
         List<String> list1 = new ArrayList<>();
