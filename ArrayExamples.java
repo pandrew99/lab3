@@ -56,7 +56,7 @@ public class ArrayExamples {
     return sum / (arr.length - 1);
   }
 
-  //fixed
+  // fixed bug
   static double averageWithoutLowest2(double[] arr) {
     if(arr.length < 2) { return 0.0; }
     double lowest = arr[0];
