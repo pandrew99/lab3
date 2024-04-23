@@ -6,12 +6,12 @@ import java.util.List;
 
 import org.junit.*;
 
-// class ChooseShortWord implements StringChecker{
-//   @Override
-//   public boolean checkString(String s){
-//     return s.length() < 5;
-//   }
-// }
+class ChooseShortWord implements StringChecker{
+  @Override
+  public boolean checkString(String s){
+    return s.length() < 5;
+  }
+}
 
 // class DogChecker implements StringChecker {
 //     @Override
